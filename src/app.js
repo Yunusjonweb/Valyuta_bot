@@ -51,6 +51,7 @@ bot.on("message", async (msg) => {
       .get(CBUURL)
       .then((response) => {
         const currencyData = response.data;
+        console.log(currencyData, 99);
         const options = {
           reply_markup: {
             resize_keyboard: true,
